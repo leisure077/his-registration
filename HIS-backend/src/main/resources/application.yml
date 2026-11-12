@@ -1,0 +1,37 @@
+server:
+  ssl:
+    enabled: false
+  port: 18080
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    username: postgres
+    password: ${DB_PASSWORD:postgres}
+    hikari:
+      minimum-idle: 8
+      maximum-pool-size: 20
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+logging:
+  level:
+    com.neuedu.mapper: debug
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: ${AI_BASE_URL:https://maas.qianwenaiapi.com/compatible-mode/v1}
+      api-key: ${AI_API_KEY:}
+      model-name: ${AI_MODEL:qwen3.8-flash}
+      timeout: 300000
+      log-requests: true
+      log-responses: true
+    streaming-chat-model:
+      base-url: ${AI_BASE_URL:https://maas.qianwenaiapi.com/compatible-mode/v1}
+      api-key: ${AI_API_KEY:}
+      model-name: ${AI_MODEL:qwen3.8-flash}
+      timeout: 300000
+      log-requests: true
+      log-responses: true

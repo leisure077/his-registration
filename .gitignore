@@ -1,0 +1,57 @@
+# ===== 后端构建产物 =====
+HIS-backend/target/
+HIS-backend!.mvn/wrapper/maven-wrapper.jar
+HIS-backend!**/src/main/**/target/
+HIS-backend!**/src/test/**/target/
+HIS-backend/.kotlin
+
+# IntelliJ IDEA
+HIS-backend/.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ===== 前端构建产物 & 依赖 =====
+HIS-frontend/node_modules/
+HIS-frontend/dist/
+HIS-frontend/dist-ssr/
+HIS-frontend/coverage/
+HIS-frontend/*.local
+HIS-frontend/.eslintcache
+HIS-frontend/.vscode/
+HIS-frontend/vite-dev.log
+
+# ===== 遗留的嵌套 git 备份 =====
+HIS-frontend/.git_bak/
+HIS-backend/.git_bak/
+
+# ===== 通用日志 =====
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+
+# Editor swap
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# VS Code 根目录
+.vscode/
